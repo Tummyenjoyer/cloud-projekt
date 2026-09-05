@@ -1,23 +1,26 @@
-# Cloud Projekt – Azure Static Website
+Cloud Projekt – Azure Static Website
 
-## Voraussetzungen
-- Azure Account (Student)
-- Terraform installiert
-- Azure CLI installiert
+Voraussetzungen
+- Azure Account
+- Terraform
+- Azure CLI
 
-## Setup
+Setup
+1. Azure Login
+   az login
 
-# 1. Azure Login
-az login
+2. In Terraform-Ordner wechseln
+   cd terraform
 
-# 2. In terraform Ordner navigieren
-cd terraform
+3. Terraform initialisieren
+   terraform init
 
-# 3. Terraform initialisieren
-terraform init
+4. Konfiguration prüfen
+   terraform validate
+   terraform plan
 
-# 4. Infrastruktur deployen
-terraform apply
+5. Infrastruktur bereitstellen
+   terraform apply
 
-## Infrastruktur löschen
-terraform destroy
+6. Website aufrufen
+   → URL aus dem Terraform-Output
