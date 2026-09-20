@@ -79,6 +79,11 @@ resource "azurerm_storage_blob" "index" {
 #   forwarding_protocol    = "HttpsOnly"
 #   https_redirect_enabled = true
 #   enabled                = true
+
+#   cache {
+#     query_string_caching_behavior = "IgnoreQueryString"
+#     compression_enabled           = true
+#   }
 # }
 
 
