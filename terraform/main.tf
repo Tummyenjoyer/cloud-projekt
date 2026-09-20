@@ -74,9 +74,11 @@ resource "azurerm_storage_blob" "index" {
 #   cdn_frontdoor_origin_group_id = azurerm_cdn_frontdoor_origin_group.main.id
 #   cdn_frontdoor_origin_ids      = [azurerm_cdn_frontdoor_origin.main.id]
 
-#   supported_protocols    = ["Https"]
+#   supported_protocols = ["Http", "Https"]
 #   patterns_to_match      = ["/*"]
 #   forwarding_protocol    = "HttpsOnly"
 #   https_redirect_enabled = true
 #   enabled                = true
 # }
+
+
